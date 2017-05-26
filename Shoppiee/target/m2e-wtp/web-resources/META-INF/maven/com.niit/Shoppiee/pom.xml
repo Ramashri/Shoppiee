@@ -59,6 +59,25 @@
 			<version>1.2</version>
 </dependency>
 
+<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>4.3.6.Final</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>4.3.2.Final</version>
+		</dependency>
+
+<dependency>
+ <groupId>com.niit.shoppiee</groupId>
+  <artifactId>ShoppieeBackend</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  </dependency>
+
   </dependencies>
   <build>
     <finalName>Shoppiee</finalName>

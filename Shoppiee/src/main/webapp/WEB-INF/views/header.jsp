@@ -45,13 +45,14 @@
         </button>
         <a class="navbar-brand" href="#"><img src="./resources/images/logo.png">
         </a>
-        <a href="ProductList">ProductList</a>
+        <!-- <a>Kidzz Shoppiee</a> -->
       </div>
       <div id="navbar3" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
           <li class="active"><a href="#">Home</a></li>
           <li><a href="login">Login</a></li>
           <li><a href="signup">Register</a></li>
+          <li><a href="ProductList">Product List</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Product <span class="caret"></span></a>
             <!-- <ul class="dropdown-menu" role="menu">

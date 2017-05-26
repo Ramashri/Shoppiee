@@ -1,13 +1,12 @@
 package com.niit.shoppiee.controller;
 
-    
-	import org.springframework.stereotype.Controller;
-	import org.springframework.web.bind.annotation.RequestMapping;
-    import org.springframework.web.servlet.ModelAndView;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
-import com.niit.shoppieebacknd.dao.ProductDAO;
-import com.niit.shoppieebacknd.daoimpl.ProductDAOImpl;
-import com.niit.shoppieebacknd.model.Product;
+import com.niit.shoppiee.ShoppieeBackend.dao.ProductDAO ;
+import com.niit.shoppiee.ShoppieeBackend.daoimpl.ProductDAOImpl;
+import com.niit.shoppiee.ShoppieeBackend.model.Product;
 
 	@Controller
 	public class HomeController {
@@ -40,12 +39,13 @@ import com.niit.shoppieebacknd.model.Product;
 		}
 		@RequestMapping("/ProductList")
 		public ModelAndView ProductList() {
-			ProductDAO cart=new ProductDAOImpl();
-			cart.addProduct(new Product(1, "ABCD", "XYZ", "Apla", "22", "4", "Pro", "Eng"));
+			ProductDAO product=new ProductDAOImpl();
+			/*product.addProduct(new Product("1", "ABCD", "XYZ", "Apla", "22", "4", "Pro", "Eng"));*/
 			ModelAndView mv = new ModelAndView("ProductList");
-			mv.addObject("products", cart);
+			mv.addObject("products", product);
 			return mv;
 		}
 	
 
 }
+ 

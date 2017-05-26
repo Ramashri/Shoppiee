@@ -11,9 +11,10 @@
         http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
 	<context:component-scan base-package="com.niit.shoppiee.controller" />
-	<context:component-scan base-package="com.niit.shoppieebacknd.dao" />
-	<context:component-scan base-package="com.niit.shoppieebacknd.daoimpl" />
-	<context:component-scan base-package="com.niit.shoppieebacknd.model" />
+	<context:component-scan base-package="com.niit.shoppiee.ShoppieeBackend.dao" />
+	<context:component-scan base-package="com.niit.shoppiee.ShoppieeBackend.daoimpl" />
+	<context:component-scan base-package="com.niit.shoppiee.ShoppieeBackend.model" />
+	<context:component-scan base-package="com.niit"/>
 	<mvc:annotation-driven/>
 
 	<bean
